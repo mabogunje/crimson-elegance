@@ -20,8 +20,6 @@
 ?>
 
 <body>
-<?php get_template_part('topbar'); ?>
-	
 	<div id="container">
 		<div id="content">
             <?php get_template_part('filterbar'); ?>

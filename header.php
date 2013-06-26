@@ -186,7 +186,12 @@
             <div id="notice" class="sticky">
                 <span class="thumbtack">&nbsp;</span>
                 <h3><?php echo $sname; ?></h3>
-                <p><?php echo $sblurb; ?></p>
+                <p>
+			<?php if( is_page('guestbook') ): echo $sticky->post_content; 
+			      else: echo $sblurb;
+			      endif;
+			?>
+		</p>
             </div>
             <?php endif; ?>
                 
