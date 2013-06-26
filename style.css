@@ -788,12 +788,22 @@ h2#site-description
     text-align:center;
 }
 
+#notice ul
+{
+    list-style:disc outside none;
+}
+
 #notice span.thumbtack
 {
     width:2em;
     height:2em;
     background:url('images/pin_red.png') top center no-repeat;
     position:absolute;
+}
+
+#notice div#igit_rpwt_css, div.sharedaddy
+{
+    display:none;
 }
 
 #skiptolatest
