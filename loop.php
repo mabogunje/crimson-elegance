@@ -30,7 +30,7 @@
 <?php endif; ?>
 
 <?php /* Start the Loop. */ ?>
-<?php query_posts( array( 'post__not_in' => get_option( 'sticky_posts' ) ) ); // Exclude Stickies ?>
+<?php if( is_home() ) { query_posts( array( 'post__not_in' => get_option( 'sticky_posts' ) ) ); } // Exclude Stickies ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
 <?php /* How to display posts */ ?>
