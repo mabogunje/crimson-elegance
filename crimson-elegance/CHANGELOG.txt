@@ -1,0 +1,51 @@
+Version 4.0
+-----------
+> New header with Facebook, Twitter, and most recent category (see header.php)
+> Added custom header image functionality, (compatible custom header image plugin)
+> Added headers folder of custom header images to the images directory
+> Removed front-page.php (deprecated for header.php)
+> Modified filterbar.php to include page navigation
+> Modified index.php to include page navigation
+> Updated all stylesheets to reflect new colour scheme (beige, white, dark grey, silver, crimson)
+> Updated screenshot.png
+
+Version 3.0
+-----------
+> Added filterbar.php and js/custom.js for filtering posts using jQuery
+> Removed category.php
+> Removed category tabs in topbar.php and replaced them with wp_list_pages
+> Removed individual page calls in footer.php and replaced them with wp_list_pages
+> Modified page.php to handle custom 'downloads' and 'editions' pages
+> Added inline login to topbar.php
+> Modified footer.php to include link to theme developer's website
+> Modified front-page.php to include links to Facebook, Twitter, and most recent category
+> Updated all stylesheets (Added styles for most html block elements)
+> Added new functions get_cat_slug & get_recent_cat to functions.php
+> Added several new images for styles to the images directory
+> Updated screenshot.png
+
+Version 2.0
+-----------
+> Added single.php template for showing comments and removed comments popup
+> Added depth 1  category tabs to topbar.php
+> Removed Theme-My-Login plugin dependency, 
+	we now style the built-in WP login page. Stylesheet and images are in the
+	custom-login folder
+> Added category.php to handle all logic for category displays
+> Added context loop templates and removed individual category templates
+> Updated all stylesheets
+> Modified sidebar.php to handle downloads category sidebar seperately
+> Added 'Back to Top' link to bottombar
+> Defined default content for sidebars
+> Updated screenshot.png
+
+Version 1.1
+-----------
+> Changed login.php template to include links to Posts page
+> Added handles for forgotten passwords and registration on login.php
+> Fixed topbar.php display across static and dynamic pages
+> Replaced logo.png
+
+Version 1.0
+-----------
+> Initial Release

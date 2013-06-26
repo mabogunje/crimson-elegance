@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+
+#topbar 
+{ 
+	vertical-align:top; 
+	display:block; 
+	margin:0px; 
+}
+
+#topbar .widget-area 
+{ 
+	width:80%; 
+	display:inline-block; 
+}
+
+#topbar .widget 
+{ 
+	text-align:center; 
+}
+
+#topbar .menu 
+{ 
+	list-style:none; 
+}
+
+#topbar .login 
+{ 
+	display:inline-block; width:180px;
+	margin:auto;
+}
+
+#container
+{
+    display:block;
+    background:#ffffff url('images/watermark.png') right bottom no-repeat;
+}
+
+#content 
+{ 
+    display:block;
+    background:transparent;
+    width:70%;
+    margin:auto;
+    padding:1em 0em 2em 0em;
+    text-align:justify; 
+}
+
+#content h1
+{ 
+    border-bottom:ridge 3px;
+}
+
+#content h1:first-letter
+{
+    font-size:1.5em;
+    color:#cf7474;
+}
+
+#content h2, h3
+{
+    border-bottom:dotted 1px;
+}

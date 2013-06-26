@@ -1,0 +1,1029 @@
+/*
+Theme Name: Crimson Elegance (Paper)
+Theme URI: http://mabogunje.net/portfolio/crimson-elegance/
+Description: Crimson Elegance is an elegant white and beige theme with silver script and crimson highlights. Developed specifically for The Red String Blog.com it comes loaded with such branding images. This theme supports widgets in 4 locations: a topbar, sidebar, and footer. It also features a Filter bar that allows you to cut down posts on any given page.
+Version: 4.0
+Wordpress Version: 3.0 + 
+Author: Damola Mabogunje
+Author URI: http://mabogunje.net/
+Tags: 2 columns, flexible width, widget-ready, custom menu, custom header image, crimson, white, grey, beige
+*/
+
+/* --- Element Styles --- */
+body
+{
+    height:100%;
+    background:#a65d5d; 
+    margin:0px; 
+    padding:0px;
+    font:0.8125em Verdana, sans-serif;
+    line-height: 1.8em;
+    color:#666666;
+    position:relative;
+}
+
+h1,h2,h3,h4,h5,h6 
+{
+    font-weight:normal;
+}
+
+h1 
+{ 
+    margin:0px;
+    color:#333333;
+}
+
+h2,h3
+{
+    color:#333333;
+}
+
+h4,h5,h6
+{
+    font-weight:bold;
+}
+
+.category-standard h2
+{
+    background:url('images/edition.png') left bottom no-repeat;
+    padding-left:40px;
+}
+
+.category-special h2
+{
+    background:url('images/special-edition.png') left bottom no-repeat;
+    padding-left:40px;
+}
+
+.category-collectibles h2
+{
+    background:url('images/paid-edition.png') left bottom no-repeat;
+    padding-left:40px;
+}
+
+.category-pdfs h2
+{
+    background:url('images/pdf.png') left bottom no-repeat;
+    padding-left:40px;
+}
+
+button 
+{ 
+    background:#444444; padding:.3em 4em .3em 4em;
+    color:#ffffff; text-align:center; vertical-align:center;
+    border:double 1px; border-color:#333333;
+    cursor:pointer;
+}
+
+button:hover { text-decoration:underline; }
+
+dfn 
+{
+    padding:0.5em;
+    border-left:solid 1px;
+    border-right:solid 1px;
+    font:italic status-bar;
+}
+
+em 
+{ 
+    color:#333333;
+}
+ 
+blockquote
+{
+    background:url('images/quote.png') left top no-repeat;
+    padding-left:50px;
+    padding-top:12px;
+    font:bolder 1.1em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:#a65d5d;
+}
+
+blockquote p:first-child:first-letter
+{
+    font-size:2em;
+    color:#cf7474;
+}
+
+cite
+{
+    color:#696969;
+    font:caption;
+    font-style:oblique;
+}
+
+sup, sub
+{
+	font-size:.8em;
+	font-variant:small-caps;
+}
+
+ul, ol
+{ 
+	list-style:none;
+	text-align:justify;
+}
+
+a 
+{ 
+	text-decoration:none; 
+	color:#e02b50;
+}
+
+a.more-link
+{
+    display:none;
+}
+
+a.download
+{
+    float:right;
+}
+
+hr 
+{ 
+    color:#dbd9c9;
+    background-color:#e6e1e1;
+    height:0.2em;
+    width:100%;
+    border-top:#808080 solid 1px;
+    border-bottom:#808080 solid 1px;
+    border-right:none;
+    border-left:none;
+}
+
+
+/* --- Splashpages (i.e. Frontpage) --- */
+
+div#splashpage
+{
+	height:100%; width:100%;
+	background:#ffffff;
+	padding:15% 0% 20% 0%;
+	margin:0px;
+	margin-bottom:-1em;
+}
+
+div#splashpage .center 
+{
+	background:url('images/logo-big.png') center no-repeat;
+	margin-left: auto; margin-right:auto;
+	text-align:center; vertical-align:center;
+	width:45em; height:120px;
+}
+
+/* --- Header --- */
+
+#branding
+{
+    height:300px;
+    background:#fffafa;
+    position:relative;
+    border-bottom:#ccc8c8 solid 3px;
+}
+
+#branding hgroup
+{
+    position:absolute;
+    bottom:1em;
+    left:34%;
+    opacity:0.8;
+    text-align:center;
+}
+
+/* --- Header --- */
+
+h1#site-title
+{
+    font:bolder 2.5em "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1#site-title a
+{
+    color:#e34062;
+}
+
+h2#site-description
+{
+    font: 1.5em "Comic Sans MS", cursive !important;
+    color:#333333;
+    margin:0px 0px -10px 0px;
+}
+
+#branding h3, h4, h5, h6
+{
+    font:bold "Franklin ITC Pro", sans-serif;
+    border-bottom:none;
+}
+
+/* --- Top Bar --- */
+
+#topbar 
+{ 
+    display:table-row; width:100%; 
+    background:url('images/topbar.png') repeat-x; 
+    //height:4em;
+    color:#ffffff;
+}
+
+#topbar ul
+{
+    white-space:nowrap;
+    padding-left:0.3em;
+}
+
+#topbar .widget-area 
+{ 
+    display:table-cell; 
+    width:100%;
+    text-align:justify; vertical-align:top; 
+}
+
+#topbar .widget 
+{ 
+	display:table-cell; 
+	text-align:center; 
+}
+
+#topbar .page_item, #topbar .cat-item
+{
+    display:inline;
+    font:bold 1.5em sans-serif;
+    padding:1.3em;
+}
+
+#topbar .page_item a, #topbar .cat-item a
+{
+    color:#cccccc;
+}
+
+#topbar .page_item a:hover, #topbar .cat-item a:hover
+{
+    color:#ffffff;
+}
+
+#topbar .current_page_item a, .current-cat a
+{
+    color:#ffffff;
+}
+
+#topbar .login
+{
+    display:table-cell;
+    padding:15px 0px 15px 0px;
+    white-space:nowrap;
+    text-align:center;
+}
+
+#topbar .login:hover
+{
+    background-color:#915c5c;
+    cursor:pointer;
+}
+
+#topbar .login li, .login a
+{
+    color:#cccccc;
+    padding: 0.4em;
+}
+
+#topbar .login a:hover
+{
+    text-decoration:underline;
+    color:#ffffff;
+}
+
+#topbar .usermenu
+{
+    display:none;
+    background:#854a4a; 
+    position:absolute; 
+    right:0px; top:60px; 
+    z-index:10;
+    opacity:0.9;
+    width:180px;
+}
+
+/* --- Side Bar -- */
+
+#sidebar 
+{ 
+    display:table-cell; 
+    height:100%;
+    padding-top:30px; 
+    padding:1.5em;
+    white-space:nowrap;
+    background:#e6e1e1;
+    border-top:#807d7d solid 2.5em;
+}
+
+#sidebar dt
+{ 
+	width:100%; 
+	font-weight:bold; text-align:center !important; 
+	margin:0px; 
+	border-bottom:solid 1px; 
+}
+
+#sidebar .widget, #sidebar ul
+{ 
+	width:100%; 
+	padding:.1em 0em .1em 0em; 
+	text-align:center;
+}
+
+#sidebar .tagcloud
+{
+	white-space:normal !important;
+	font:menu;
+}
+
+#sidebar .tagcloud a
+{
+	color:#cf7474 !important;
+}
+
+/* --- Filter Bar -- */
+
+#filter
+{
+    background:#807d7d;
+    width:100%;
+    position:absolute;
+    top:0px;
+    font:menu;
+    text-align:center;
+    text-transform:capitalize;
+    color:#dbd9c9;
+}
+
+#filter .older
+{
+    position:absolute;
+    top:8px;
+    left:5px;
+    color:#dbd9c9;
+}
+
+#filter .main
+{
+    margin:auto;
+}
+
+#filter .newer
+{
+    position:absolute;
+    top:8px;
+    right:5px;
+}
+
+#filter ul
+{
+    display:inline;
+    margin:0px;
+    padding:0px;
+}
+
+#filter li
+{
+    display:inline-block;
+    padding:8px;
+    color:#cccccc;
+    cursor:pointer;
+}
+
+#filter a
+{
+    color:#cccccc !important;
+}
+
+#filter a:hover
+{
+    color:#ffffff !important;
+}
+
+#filter .selected, #filter li:hover
+{
+    background:url('images/selected.png') bottom center no-repeat;
+    color:#ffffff;
+}
+
+/* --- Content Nav's --- */
+
+#nav-above, #nav-below
+{
+    width:95%;
+    margin:auto;
+    padding-top:0.5em;
+    position:relative;
+    color:#db4d4d;
+}
+
+#nav-above .nav-previous, #nav-below .nav-previous
+{
+    position:absolute;
+    left:0px;
+}
+
+#nav-above .nav-next, #nav-below .nav-next
+{
+    position:absolute;
+    right:0px;
+}
+
+/* --- Footer -- */
+
+#footer 
+{ 
+    display:table; 
+    width:100%;
+    background:url('images/footer.png') repeat-x;
+    font:caption; 
+    color:#cccccc;
+    padding-top:0.5em;
+}
+
+#footer dt
+{
+    display:inline-block;
+    width:33%;
+    text-align:center;
+}
+
+#footer .widget 
+{ 
+    display:inline-block; 
+    width:33%;
+    text-align:center !important; 
+}
+
+#footer a 
+{ 
+	color:#eeeeee; 
+}
+
+#footer a:hover 
+{ 
+    color:#ffffff; 
+    text-decoration:underline;
+}
+
+#footer .page_item
+{
+    display:inline;
+    padding:0.3em;
+}
+
+#footer .current_page_item
+{
+    text-decoration:underline;
+    color:#ffffff;
+}
+
+#footer .current_page_item a
+{
+    color:#ffffff;
+}
+
+
+/* --- Container -- */
+
+#container 
+{ 
+	display:table-row; width:100%; 
+	background:#ffffff; 
+}
+
+#container div.post div.entry 
+{ 
+	padding:0px 10% 1em 10%; 
+	text-align:justify; 
+}
+
+
+#container div.post div.entry p:first-child:first-letter
+{
+    font-size:2em;
+    color:#cf7474;
+}
+
+#container div.post div.entry ul li 
+{ 
+	list-style:disc; 
+	margin:5px 0 5px 30px
+	text-align:justify !important;
+}
+
+#container div.post div.entry ol li 
+{ 
+	list-style:decimal; 
+	margin:5px 0 5px 30px;
+	text-align:justify !important;
+}
+
+#container div.post div.entry img 
+{
+    background:#ffffff;
+    padding:0.2em;
+    border:#cccccc groove 1px;
+}
+
+#container div.post div.entry div.postmetadata 
+{
+	padding-top:10px;
+	color:#a00; font-size:75%; text-align:center;
+}
+
+#container div.post div.entry div.postmetadata a 
+{ 
+	border-bottom:1px solid; 
+	color:#cf7474; 
+}
+
+#container div.post div.entry div.postmetadata a:hover 
+{ 
+	border-bottom:1px solid; 
+	color:#a00 
+}
+
+#container div.post div.entry div.postmetadata div 
+{
+	display:inline;
+	height:30px;
+	line-height:130%;
+	margin-right:20px;
+	padding-left:20px
+}
+
+#container div.post div.entry div.postmetadata div.small-readmore 
+{ 
+	background:url('images/small-readmore.gif') left no-repeat; 
+}
+
+#container div.post div.entry div.postmetadata div.small-tags 
+{ 
+	background:url('images/small-tags.gif') left no-repeat; 
+}
+
+#container div.post div.entry div.postmetadata div.small-comments 
+{ 
+	background:url('images/small-comment.gif') left no-repeat; 
+}
+
+#container div.post-editions
+{
+    width:90%;
+    display:table;
+    margin:auto;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    text-align:justify;
+    border:#828279 solid 1px;
+    border-left:#828279 solid 24px;
+    position:relative;
+}
+
+#container div.post-editions:hover
+{
+    border-left:#cf7474 solid 24px;
+}
+
+#container div.post-editions div
+{
+    display:table-cell;
+    vertical-align:top;
+    background:#f5f5f5;
+}
+
+#container div.post-editions div:first-child
+{
+    width:70%;
+    padding:0em 0.5em 0em 0.5em;
+    background:#f5f5f5;
+}
+
+#container div.post-editions .post-toc
+{
+    display:table;
+    width:100%;
+    text-align:justify;
+    white-space:nowrap;
+    margin-top:0px;
+}
+
+#container div.post-editions .post-toc dt
+{
+    font-weight:bolder;
+    text-align:center;
+    background:#cf7474;
+    padding:0.5em;
+}
+
+#container div.post-editions .post-toc dd
+{
+    display:block;
+    padding:0.5em;
+    padding-right:18px;
+    border-bottom:solid 1px;
+    font-size:14px;
+}
+
+#container div.post-editions .post-toc dd:hover
+{
+    background:url('images/arrow_right.png') right center no-repeat;
+}
+
+#container div.post-editions .post-toc dd.more
+{
+    background:#555555;
+    text-align:center;
+}
+
+#container div.post-editions .post-toc dd.more a
+{
+    color:#d99090;
+    font:italic bold 1em monospace;
+}
+
+#content 
+{ 
+	display:table-cell; 
+    width:100%;
+	text-align:center; 
+    position:relative;
+    padding-bottom:2.5em;
+}
+
+/* --- Comments --- */
+
+#comments 
+{ 
+	margin:auto; 
+}
+
+#comments-title, #reply-title 
+{
+    background:#e6e1e1;
+    padding:0.5em;
+    font:1.05em Arial, Helvetica, sans-serif;
+    border-top:#808080 solid 1px;
+    border-bottom:#808080 solid 1px;
+    text-align:justify;
+}
+
+#comments .comment, #comments .pingback
+{
+    padding:1em;
+    font:caption;
+}
+
+#comments .author
+{
+    padding:0.3em;
+    color:#555555;
+    text-decoration:underline;
+}
+
+#comments a
+{
+    color:#cf7474;
+}
+
+#comments .children
+{
+    margin:0em 0em 0em 0.5em;
+    padding:0px;
+    border-left:dashed 1px;
+}
+
+#respond
+{
+    padding:1em 0em 1em 0em;
+}
+
+#commentform 
+{ 
+	display:table; width:80%; 
+	margin:auto; 
+}
+
+#commentform p 
+{ 
+	text-align:justify; vertical-align:top; 
+}
+
+#commentform input, #commentform textarea 
+{ 
+	float:right; width:40em; 
+}
+
+#commentform .form-allowed-tags 
+{ 
+	display:table-row; 
+	font:status-bar; 
+}
+
+#commentform #submit 
+{ 
+	background:#ffffff; 
+    padding:.3em 4em .3em 4em;
+	color:#cf7474; 
+    text-align:center; 
+    vertical-align:center;
+	border:#666666 double;
+	cursor:pointer;
+	width:200px;
+
+	/* Opx radius settings are to negate previous css definitions 
+	-moz-border-radius:0px; -moz-border-radius-topright: 11px;
+    -khtml-border-radius:0px; -khtml-border-top-right-radius: 11px;
+    -webkit-border-radius:0px; -webkit-border-top-right-radius: 11px;
+    border-radius:0px; border-top-right-radius: 11px;	
+    */
+}
+
+/* --- Custom IDs -- */
+
+#facebook
+{
+    width:94px;
+    height:94px;
+    background:transparent url('images/stamp_facebook.png') no-repeat;
+    position:absolute;
+    top:34%;
+    left:1em; 
+    z-index:1;
+}
+
+#twitter
+{
+    width:94px;
+    height:94px;
+    background:transparent url('images/stamp_twitter.png') no-repeat;
+    position:absolute;
+    top:66%;
+    left:1em; 
+    z-index:1;
+}
+
+#bookmark
+{
+    width:94px;
+    height:94px;
+    background:transparent url('images/stamp_bookmark.png') no-repeat;
+    position:absolute;
+    top:2%;
+    left:1em; 
+    z-index:1;
+}
+
+#notice
+{
+    width:200px;
+    position:absolute;
+    top:1em;
+    left:126px;
+    z-index:1; 
+    padding:0px 0.5em 0px 0.5em;
+    text-align:center;
+}
+
+#notice span.thumbtack
+{
+    width:2em;
+    height:2em;
+    background:url('images/pin_red.png') top center no-repeat;
+    position:absolute;
+}
+
+#skiptolatest
+{
+    width:250px;
+    border:#333333 double 5px;
+    opacity:0.7;
+    position:absolute;
+    top:1em;
+    right:1em; 
+    z-index:1;
+    padding:0px 0.5em 0px 0.5em;
+    text-align:center;
+    color:#000000;
+}
+
+#skiptolatest h3
+{
+    font:bold 1.5em "Franklin ITC Pro Bold", sans-serif;
+    color:#000000;
+}
+
+
+#skiptolatest a
+{
+    font-weight:bold;
+    color:#cc0000;
+}
+
+#profilepic_profile 
+{ 
+	display:block; 
+	vertical-align:top; 
+	padding:10px; 
+	text-align:justify; font:status-bar; 
+}
+
+#profilepic_profile p 
+{ 
+	padding:0px; 
+	margin:0px;
+	white-space:pre-wrap;
+}
+
+#profilepic_profile img 
+{ 
+	float:left; 
+	padding:2px; 
+	border:solid 1px; 
+	margin-right:5px; 
+	vertical-align:top; 
+}
+
+#igit_rpwt_css
+{
+	margin:1em 0em 1em 0em !important;
+}
+
+#igit_rpwt_css h4
+{
+	border-bottom:dotted 1px;
+}
+
+#igit_rpwt_li
+{
+	display:inline-block;
+	margin:0em 0.5em 0em 0.5em;
+	font:status-bar;
+}
+
+#igit_rpwt_li a
+{
+	color:#e02b50 !important;
+}
+
+#igit_rpwt_li a:hover
+{
+	text-decoration:underline;
+}
+
+#searchform 
+{ 
+	padding:10px; 
+	color:#fff; font:status-bar;
+}
+
+#s 
+{ 
+    width:15em; 
+    height:1.5em;
+    background:#ffffff url('images/search.png') 3% 50% no-repeat;
+    border:inset 1px;
+    padding-left:16px;
+    font:1.4em;
+}
+
+#searchform .screen-reader-text
+{
+    display:none;
+}
+
+#searchsubmit 
+{ 
+    display:none;
+}
+
+#categories li.categories 
+{ 
+	list-style:none; 
+	text-align:center; font-weight:bold; 
+}
+
+#categories li.cat-item 
+{ 
+	font-weight:normal; 
+}
+
+
+/* --- Misc Classes --- */
+
+.category-title 
+{ 
+	background:none; 
+	font-family:"Helvetica" normal; 
+}
+
+.comment, .pingback 
+{ 
+	text-align:justify; 
+	padding:.5em 0em .5em 0em; 
+	border-bottom:dashed 1px; 
+}
+
+.comment p, .pingback p
+{ 
+	padding-left:1em; 
+}
+
+.comment .reply
+{ 
+	text-align:right; 
+}
+
+.pingback .reply
+{
+	display:none;
+}
+
+.button 
+{ 
+    background:#444444; padding:.3em 4em .3em 4em;
+    color:#ffffff; text-align:center; vertical-align:center;
+    border:double 1px; border-color:#333333;
+    cursor:pointer;
+}
+
+.button:hover 
+{ 
+	text-decoration:underline; 
+}
+
+.widget_nav_menu 
+{ 
+	word-spacing:10px; 
+}
+
+.widget_nav_menu li 
+{ 
+	display:inline; 
+}
+
+.greylink 
+{ 
+	color:#999 !important; 
+}
+
+.wp-caption
+{
+    margin:1em;
+}
+
+.wp-caption-text
+{
+    font-size:14px;
+    font-family:cursive;
+    padding:0.5em 1em 1em 0.5em;
+    text-align:center;
+    color:#ffffff;
+    background:#dd9e9e;
+    border:dotted 2px;
+}
+
+.attachments
+{
+    width:90%;
+    margin:auto;
+    margin-left:0px;
+}
+
+.attachments li
+{
+    background:#f5f5f5;
+    padding:1em;
+    padding-top:0.1em;
+    margin:0.5em;
+    border:#828279 solid 1px;
+    border-left:#828279 solid 24px;
+}
+
+.attachments li:hover
+{
+    border-left:#cf7474 solid 24px;
+}
+
+.aligncenter, .alignnone
+{
+    margin:auto !important;
+}
+
+.wp-smiley
+{
+    border:none !important;
+}
+
+.assistive-text
+{
+    display:none;
+}
+
+.sticky
+{
+    background:#fffacd;
+}
