@@ -152,6 +152,24 @@ hr
     border-left:none;
 }
 
+table
+{
+    border:solid 1px;
+    margin:0.5em;
+    text-align:center;
+}
+
+th
+{
+    background:#cf7474;
+    color:#ffffff;
+}
+
+td.highlight
+{
+    background:#dcdcdc;
+}
+
 
 /* --- Splashpages (i.e. Frontpage) --- */
 
@@ -647,9 +665,9 @@ h2#site-description
 
 #content 
 { 
-	display:table-cell; 
+    display:table-cell; 
     width:100%;
-	text-align:center; 
+    text-align:center; 
     position:relative;
     padding-bottom:2.5em;
 }
